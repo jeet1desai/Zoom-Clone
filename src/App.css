@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "jeet sans";
+  src: url(./assets/fonts/google-sans-cufonfonts/ProductSans-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "jeet sans", "Roboto", sans-serif !important;
+}
+
+#root {
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.navbar .app-heading {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 2.25rem;
+}
+
+/* Join call */
+.join-call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  flex-direction: column;
+}
+
+.join-call h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.join-call p {
+  font-weight: normal;
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.join-call .form-join-call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.join-call .form-join-call .MuiInputBase-root {
+  border-radius: 8px;
+  width: 280px;
+}
+
+.join-call .form-join-call input {
+  font-size: 16px;
+}
+
+.join-call .form-join-call button {
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: none;
+  font-weight: bold;
+}
+
+/* Video */
+.video-canvas {
+  height: 85vh;
+  overflow-x: hidden;
+  overflow-y: unset;
+  margin: 20px;
+  background-color: black;
+}
+
+.video-canvas > div {
+  overflow: hidden !important;
+}
+
+video {
+  /* width: 100vw !important;
+  height: unset !important; */
+}
+
+/* icon */
+.menu-bottom-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: rgb(58 59 64);
+  color: white;
+}
+
+.menu-bottom-box .menu-bottom-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.call-icons {
+  background-color: rgb(145, 145, 145);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.call-icons.muted,
+.call-end {
+  background-color: red;
+  color: white;
+}
+
+.share-icon {
+  background-color: rgb(169, 169, 239);
+  color: white;
+}
+
+.isInfo {
+  color: white;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 350px;
+}
+.sidebar .close-menu {
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sidebar-content-box {
+  padding: 10px 20px;
+}
+
+.attendee-info h3 {
+  margin-bottom: 15px;
+}
+
+.attendee-info p {
+  margin-bottom: 15px;
+}
+
+.attendee-info span {
+  color: #1a73e8;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* dialog */
+.MuiDialogContent-root {
+  padding-top: 20px !important;
+}
+
+.MuiDialogContent-root form {
+  width: 100%;
+}
+
+/* Participant */
+.member-box {
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  padding: 6px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.member-right-side {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.member-right-side button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+}
+
+.member-right-side button.danger {
+  background-color: red;
+  color: white;
+}
+
+.member-right-side button.success {
+  background-color: green;
+  color: white;
+}
